@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tip Calculator</title>
+<style>:root{--bg:#f6f7fb;--fg:#1b1d24;--card:#fff;--acc:#2f6fed}body.dark{--bg:#14161c;--fg:#e8eaf0;--card:#20232c;--acc:#7aa2ff}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--fg);display:grid;place-items:center;min-height:100vh}
+.card{background:var(--card);padding:28px;border-radius:14px;width:320px;box-shadow:0 4px 20px #0002}label{display:block;margin-top:12px}
+input{width:100%;padding:8px;font-size:16px;box-sizing:border-box;border-radius:8px;border:1px solid #8886;background:transparent;color:inherit}
+.out{margin-top:18px;font-size:18px}.out b{color:var(--acc)}button{float:right;cursor:pointer;border-radius:8px;border:1px solid #8886;background:transparent;color:inherit;padding:4px 10px}</style></head>
+<body><div class="card"><button id="theme">🌙 Dark</button><h2>Tip Calculator</h2>
+<label>Bill amount<input id="bill" type="number" min="0" step="0.01" value="50"></label>
+<label>Tip %<input id="tip" type="number" min="0" value="15"></label>
+<label>People<input id="people" type="number" min="1" value="2"></label>
+<div class="out">Tip: <b id="tipAmt"></b><br>Total: <b id="total"></b><br>Per person: <b id="each"></b></div></div>
+<script src="app.js"></script></body></html>
